@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { useAuthStore } from '../stores/auth'
 import Login from '../views/Login.vue'
-import Home from '../views/Home.vue' // 假设这是你的首页
+import Home from '../views/Home.vue'
 
 const router = createRouter({
   history: createWebHistory(),

@@ -5,7 +5,7 @@
 	"compatibility_date": "2025-11-23",
 	"d1_databases": [
 		{
-			"binding": "tufang_db",
+			"binding": "DB",
 			"database_name": "tufang-db",
 			"database_id": "85b888ca-8a9a-44ac-8551-fce65a3555c7"
 		}
