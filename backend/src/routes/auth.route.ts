@@ -5,10 +5,8 @@ import { authMiddleware } from '../middlewares/auth.middleware'
 
 const app = new Hono<HonoEnv>()
 
-// POST /api/auth/login
-app.post('/login', authController.login)
+const route = app
+  .post('/login', authController.login)
+  .get('/profile', authMiddleware, authController.getProfile)
 
-// GET /api/auth/profile (需要鉴权)
-app.get('/profile', authMiddleware, authController.getProfile)
-
-export default app
+export default route

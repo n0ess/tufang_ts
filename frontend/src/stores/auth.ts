@@ -15,7 +15,7 @@ export const useAuthStore = defineStore('auth', () => {
       json: { username: u, password: p }
     })
 
-    const data = await res.json()
+    const data = await res.json() as any
 
     if (res.ok && data.code === 0) {
       // 更新 State
